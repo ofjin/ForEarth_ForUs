@@ -75,7 +75,8 @@ class Classifier(private var context: Context, private val modelName: String) {
     }
 
     companion object {
-        const val IMAGENET_CLASSIFY_MODEL = "mobilenet_imagenet_model.tflite"
+        const val IMAGENET_CLASSIFY_MODEL = "edit_version.tflite" // 티처블 머신 모델 추출
+        // const val IMAGENET_CLASSIFY_MODEL = "model.tflite" // TensorFlow Lite Model Maker 모델 추출
         const val LABEL_FILE = "labels.txt"
     }
 }

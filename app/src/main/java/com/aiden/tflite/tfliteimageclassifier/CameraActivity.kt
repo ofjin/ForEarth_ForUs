@@ -37,7 +37,8 @@ class CameraActivity : AppCompatActivity() {
             bitmap?.let {
                 val output = classifier.classify(bitmap)
                 val resultStr =
-                    String.format(Locale.ENGLISH, "class : %s, prob : %.2f%%", output.first, output.second * 100)
+                    // String.format(Locale.ENGLISH, "class : %s, prob : %.2f%%", output.first, output.second * 100)
+                    String.format(Locale.ENGLISH, "%s류에 배출해주세요.", output.first)
                 binding.run {
                     textResult.text = resultStr
                     imagePhoto.setImageBitmap(bitmap)
