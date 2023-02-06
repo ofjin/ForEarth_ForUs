@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--네비게이션바를 위한 -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu"/>
+    <!--네비게이션바를 위한 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:src="@drawable/rectangle_b" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="환영합니다!"
+            android:textSize="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="26dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="김슈니 님"
+            android:textSize="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="26dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginTop="89dp"
+            android:layout_marginLeft="26dp"
+            android:textColor="@color/black"
+            android:text="지구를 지키는 한 걸음"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alarm"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="363dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카메라"
+            android:id="@+id/camerabtn"
+            android:layout_marginLeft="200dp"/>
+
+
+        <!--스탬프 시작-->
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/rectangle_w" />
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:src="@drawable/fofo"
+            android:layout_marginTop="123dp"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 모은 포인트"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="210dp"
+            android:textSize="13dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/stamp_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500p"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="220dp"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:textColor="#B2BFE7" />
+        <!--스탬프 끝-->
+
+        <!--히스토리 시작-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line1"
+            android:layout_marginTop="268dp"
+            android:layout_marginLeft="50dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line2"
+            android:layout_marginTop="277dp"
+            android:layout_marginLeft="204dp"/>
+        <ImageButton
+            android:id="@+id/history_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/history"
+            android:layout_marginTop="287dp"
+            android:layout_marginLeft="80dp"/>
+        <Button
+            android:id="@+id/history_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="히스토리"
+            android:background="#00ff0000"
+            android:layout_marginTop="273dp"
+            android:layout_marginLeft="95dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <!--히스토리 끝-->
+
+        <!--플로깅하기 시작-->
+        <ImageButton
+            android:id="@+id/plogging_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/store"
+            android:layout_marginTop="287dp"
+            android:layout_marginLeft="226dp"/>
+
+        <Button
+            android:id="@+id/plogging_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="273dp"
+            android:background="#00ff0000"
+            android:text="스토어"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+    <!--히스토리 끝-->
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:layout_marginBottom="50dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--환경 캠페인 시작-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:src="@drawable/rectangle1"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="환경 캠페인"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="16dp"/>
+
+                <!--환경 캠페인 사진 스크롤-->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="50dp"
+                            android:background="@drawable/campaign1" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="50dp"
+                            android:background="@drawable/campaign2" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <!--환경 캠페인 스크롤 뷰 끝-->
+
+            </FrameLayout>
+            <!--환경 캠페인 끝-->
+
+
+            <!--환경 기사 시작-->
+            <FrameLayout
+                android:id="@+id/article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle2"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dp"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="환경 기사"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="16dp"/>
+
+                <!--환경 기사 스크롤뷰 시작-->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="65dp"
+                                android:background="@drawable/news1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="5dp"
+                                android:text="서울도심 쓰레기 함께 주워요…롯데백화점 '시티플로깅'"
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/news2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="65dp"
+                            android:background="@drawable/news2" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <!--환경 기사 스크롤뷰 끝-->
+            </FrameLayout>
+            <!--환경 기사 끝-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
