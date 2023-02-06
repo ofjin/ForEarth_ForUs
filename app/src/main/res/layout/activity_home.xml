@@ -63,6 +63,7 @@
             android:layout_marginTop="27dp"
             android:layout_marginLeft="363dp"/>
 
+
         <!--스탬프 시작-->
 
         <ImageView
