@@ -14,6 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TFLiteImageClassifier">
         <activity
+            android:name=".StoreDetail"
+            android:exported="false" />
+        <activity
+            android:name=".StoreMain"
+            android:exported="false" />
+        <activity
             android:name=".PurchaselistActivity"
             android:exported="false" />
         <activity
