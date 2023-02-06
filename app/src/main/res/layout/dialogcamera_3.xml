@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/iv_scrapmetal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/tv_scrapmetal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -26,7 +26,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_scrapmetal" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -38,25 +38,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/iv_line"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:background="@drawable/dia_lin"
-        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/tv_scrapmetal"
         tools:layout_editor_absoluteX="16dp" />
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/iv_check4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/dia_check"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_line" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/tv_content4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -64,21 +64,21 @@
         android:text="내용물을 비우고 가능한 압착하여 배출"
         android:textColor="#000000"
         android:textSize="16dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView12"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        app:layout_constraintStart_toEndOf="@+id/iv_check4"
+        app:layout_constraintTop_toBottomOf="@+id/iv_line" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/iv_check5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/dia_check"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_check4" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/tv_content5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -86,18 +86,18 @@
         android:text="겉 또는 속의 플라스틱 뚜껑 등 제거"
         android:textColor="#000000"
         android:textSize="16dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        app:layout_constraintStart_toEndOf="@+id/iv_check5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content4" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/iv_check6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/dia_check"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_check5" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -107,8 +107,8 @@
         android:text="캔 내부의 담배꽁초 등 이물질 제거"
         android:textColor="#000000"
         android:textSize="16dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView14"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintStart_toEndOf="@+id/iv_check6"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
