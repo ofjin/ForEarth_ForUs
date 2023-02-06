@@ -16,17 +16,12 @@
         tools:layout_editor_absoluteY="-1dp" />
 
 
-    <Button
+    <ImageButton
         android:id="@+id/bnt_login"
         android:layout_width="330dp"
         android:layout_height="45dp"
         android:layout_marginTop="40dp"
-        android:background="@drawable/login_bt"
-        android:backgroundTint="#86B1E5"
-        android:text="로그인"
-        android:textColor="#fff"
-        android:textSize="15dp"
-        android:textStyle="bold"
+        android:background="@drawable/login_bnt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,7 +108,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
-        android:background="@null"
+        android:background="@android:color/transparent"
         android:text="아이디 찾기"
         android:textAlignment="center"
         android:textColor="#4F4F4F"
