@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StoreDetail">
+    tools:context=".StoreDetail_garbagebag5">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -67,17 +67,17 @@
                 android:background="@drawable/rectangle131">
 
                 <ImageView
-                    android:layout_width="160dp"
+                    android:layout_width="250dp"
                     android:layout_height="230dp"
-                    android:layout_marginLeft="140dp"
+                    android:layout_marginLeft="80dp"
                     android:layout_marginTop="40dp"
-                    android:background="@drawable/y_garbage" />
+                    android:background="@drawable/w_garbage_bag" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="14dp"
-                    android:text="음식물 쓰레기 봉투(2L)"
+                    android:text="음식물 쓰레기 봉투(50L)"
                     android:textSize="17dp"
                     android:textStyle="bold"
                     android:layout_marginLeft="50dp"
@@ -87,7 +87,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="190p"
+                    android:text="1250p"
                     android:textSize="25dp"
                     android:textStyle="bold"
                     android:layout_marginLeft="50dp"
@@ -97,7 +97,7 @@
                     android:layout_width="400dp"
                     android:layout_gravity="center"
                     android:layout_height="0.5dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="6dp"
                     android:layout_marginRight="15dp"
                     android:background="@drawable/line31" />
 
@@ -139,7 +139,7 @@
                         android:id="@+id/price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="190P"
+                        android:text="1250P"
                         android:textSize="25dp"
                         android:textStyle="bold"
                         android:textColor="@color/black"

@@ -14,10 +14,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TFLiteImageClassifier">
         <activity
+            android:name=".StoreDetail_sticker3"
+            android:exported="false" />
+        <activity
+            android:name=".StoreDetail_sticker2"
+            android:exported="false" />
+        <activity
+            android:name=".StoreDetail_ecobag"
+            android:exported="false" />
+        <activity
+            android:name=".StoreDetail_bag"
+            android:exported="false" />
+        <activity
+            android:name=".StoreDetail_garbagebag5"
+            android:exported="false" />
+        <activity
+            android:name=".StoreDetail_garbagebag4"
+            android:exported="false" />
+        <activity
+            android:name=".StoreDetail_garbagebag3"
+            android:exported="false" />
+        <activity
+            android:name=".StoreDetail_garbagebag2"
+            android:exported="false" />
+        <activity
             android:name=".Home"
             android:exported="false" />
         <activity
-            android:name=".StoreDetail"
+            android:name=".StoreDetail_garbagebag1"
             android:exported="false" />
         <activity
             android:name=".StoreMain"
