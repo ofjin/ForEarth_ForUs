@@ -152,17 +152,17 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <Button
+                    <android.widget.Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/rectangle33"
-                        android:layout_marginTop="40dp"
                         android:layout_marginLeft="50dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/rectangle333"
                         android:text="장바구니"
                         android:textSize="20dp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
-                    <Button
+                    <android.widget.Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/rectangle333"
@@ -170,6 +170,8 @@
                         android:layout_marginLeft="15dp"
                         android:text="구매하기"
                         android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:backgroundTint="#86B1E5"
                         android:textStyle="bold"/>
 
                 </LinearLayout>
@@ -184,7 +186,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <!--네비게이션바
+    <!--네비게이션바-
    <ImageView
        android:id="@+id/bottom"
        android:layout_width="430dp"
