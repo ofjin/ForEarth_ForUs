@@ -126,7 +126,7 @@
 
 
 
-            <!--상품 두두 번째 줄 시작-->
+            <!--상품 두 번째 줄 시작-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -262,8 +262,187 @@
                         android:textSize="14dp" />
                 </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
+            <!--장바구니, 에코백-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/bag"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/bag"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="장바구니"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="490p"
+                        android:textColor="@color/sora"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+                <!--장바구니 끝-->
+
+                <!--에코백 시작-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/eco_bag"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/eco_bag"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="에코백"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="490p"
+                        android:textColor="@color/sora"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--장바구니, 에코백 끝-->
+
+            <!--스티커 시작-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/sticker1000"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/sticker"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="대형폐기물스티커(1000원권)"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000p"
+                        android:textColor="@color/sora"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/sticker2000"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/sticker"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="대형폐기물스티커(2000원권)"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2000p"
+                        android:textColor="@color/sora"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--스티커 끝-->
+
+            <!--스티커 3000원권 시작-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/sticker3000"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/sticker"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="대형폐기물스티커(3000원권)"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3000p"
+                        android:textColor="@color/sora"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
     </ScrollView>
 
     <!--네비게이션바
