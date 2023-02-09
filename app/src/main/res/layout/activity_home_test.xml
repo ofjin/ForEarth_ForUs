@@ -130,8 +130,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/home"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        app:srcCompat="@drawable/home" />
 
     <ImageButton
         android:id="@+id/wreal"
@@ -143,8 +142,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/camera"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        app:srcCompat="@drawable/camera" />
 
     <ImageButton
         android:id="@+id/wkeep"
@@ -155,8 +153,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/earth"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        app:srcCompat="@drawable/earth" />
 
     <ImageButton
         android:id="@+id/point"
@@ -168,8 +165,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.705"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/point"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        app:srcCompat="@drawable/point" />
 
     <ImageButton
         android:id="@+id/more"
@@ -181,7 +177,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.915"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/more"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        app:srcCompat="@drawable/more" />
     <!--네비게이션바를 위한 -->
 </androidx.constraintlayout.widget.ConstraintLayout>
