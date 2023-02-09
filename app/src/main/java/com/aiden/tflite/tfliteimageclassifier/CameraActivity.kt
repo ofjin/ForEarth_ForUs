@@ -1,5 +1,6 @@
 package com.aiden.tflite.tfliteimageclassifier
 
+import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.ImageDecoder
 import android.net.Uri
@@ -82,4 +83,6 @@ class CameraActivity : AppCompatActivity() {
         }
         return FileProvider.getUriForFile(applicationContext, "${BuildConfig.APPLICATION_ID}.provider", tmpFile)
     }
+
+
 }
