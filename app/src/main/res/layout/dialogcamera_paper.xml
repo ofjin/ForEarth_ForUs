@@ -59,12 +59,12 @@
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="28dp"
         android:text="종이 조각도 모이면 재활용이 가능하므로 종이류 수거함으로 배출 (카드 영수증은 종량제봉투로 배출)"
         android:textColor="#000000"
         android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/iv_check4"
         app:layout_constraintTop_toBottomOf="@+id/iv_line" />
 

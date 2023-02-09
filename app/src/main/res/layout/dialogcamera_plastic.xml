@@ -106,7 +106,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
-        android:text="부착상표, 부속품 등 본체와 다른 재질은 제거한 후 배출 (종량제봉투, 특수규격마대 또는 대형폐기물 등오로 배출)"
+        android:text="부착상표, 부속품 등 본체와 다른 재질은 제거한 후 배출 (종량제봉투, 특수규격마대 또는 대형폐기물 등으로 배출)"
         android:textColor="#000000"
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
