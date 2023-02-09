@@ -12,28 +12,6 @@ class Home : AppCompatActivity() , BottomNavigationView.OnNavigationItemSelected
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        bottomNavi.setOnNavigationItemSelectedListener(this)
 
-        supportFragmentManager.beginTransaction().add(R.id.linearLayout, HomeFragment()).commit()
-    }
-
-    override fun onNavigationItemSelected(item: Menu): Boolean {
-
-        when(item.home) {
-            R.id.page_home -> {
-                supportFragmentManager.beginTransaction().replace(R.id.linearLayout , HomeFragment()).commitAllowingStateLoss()
-                return true
-            }
-            R.id.page_tv -> {
-                supportFragmentManager.beginTransaction().replace(R.id.linearLayout, TVFragment()).commitAllowingStateLoss()
-                return true
-            }
-            R.id.page_calendar -> {
-                supportFragmentManager.beginTransaction().replace(R.id.linearLayout, CalendarFragment()).commitAllowingStateLoss()
-                return true
-            }
-        }
-
-        return false
     }
 }
