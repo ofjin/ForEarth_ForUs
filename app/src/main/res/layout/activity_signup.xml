@@ -8,9 +8,11 @@
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
@@ -102,7 +104,7 @@
             android:layout_marginRight="16dp"
             android:background="@drawable/info_textview"
             android:ems="10"
-            android:hint="아이디를 입력하세요"
+            android:hint="이메일을 입력하세요"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -165,34 +167,6 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="25dp"
-            android:text="이메일"
-            android:textColor="#212529"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edtSignUpPwdChk" />
-
-        <EditText
-            android:id="@+id/edtSignUpEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/info_textview"
-            android:ems="10"
-            android:hint="이메일을 입력하세요."
-            android:inputType="textEmailAddress"
-            android:maxLength="13"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
