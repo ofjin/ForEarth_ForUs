@@ -11,30 +11,69 @@
         android:layout_height="270sp"
         android:src="@drawable/rectangle_b"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
         android:text="환영합니다!"
         android:textColor="@color/black"
         android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        android:layout_marginStart="20sp"
-        android:layout_marginTop="20sp"/>
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
 
+    <!--프로필 시작-->
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/iv_BGwhite"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="170sp"
+        android:layout_marginTop="168dp"
         android:src="@drawable/rectangle_w"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <!--포인트 시작-->
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginBottom="55sp"
+        android:src="@drawable/fofo"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_BGwhite"
+        app:layout_constraintStart_toStartOf="@+id/iv_BGwhite" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="현재 모은 포인트"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_BGwhite"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/iv_BGwhite" />
+
+    <TextView
+        android:id="@+id/stamp_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="500p"
+        android:textColor="#B2BFE7"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_BGwhite"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+    <!--포인트 끝-->
 
 
     <!--환경 정보 시작-->
@@ -42,7 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7">
+        app:layout_constraintTop_toBottomOf="@+id/iv_BGwhite">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
