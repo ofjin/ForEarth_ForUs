@@ -192,6 +192,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="16dp"/>
 
+
                 <!--환경 캠페인 사진 스크롤-->
                 <HorizontalScrollView
                     android:layout_width="match_parent"
@@ -202,6 +203,7 @@
                         android:orientation="horizontal">
 
                         <ImageButton
+                            android:id="@+id/campaign_link1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="16dp"
@@ -209,11 +211,13 @@
                             android:background="@drawable/campaign1" />
 
                         <ImageButton
+                            android:id="@+id/campaign_link2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="16dp"
                             android:layout_marginTop="50dp"
                             android:background="@drawable/campaign2" />
+
                     </LinearLayout>
                 </HorizontalScrollView>
                 <!--환경 캠페인 스크롤 뷰 끝-->
@@ -227,12 +231,7 @@
                 android:id="@+id/article"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/rectangle2"
-                    android:layout_gravity="top"
-                    android:layout_marginTop="10dp"></ImageView>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -258,6 +257,7 @@
                             android:orientation="vertical">
 
                             <ImageButton
+                                android:id="@+id/news_link1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="16dp"
@@ -272,10 +272,17 @@
                                 android:text="서울도심 쓰레기 함께 주워요…롯데백화점 '시티플로깅'"
                                 android:textColor="@color/black"
                                 android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/rectangle2"></ImageView>
                         </LinearLayout>
 
                         <ImageButton
-                            android:id="@+id/news2"
+                            android:id="@+id/news_link2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="16dp"
