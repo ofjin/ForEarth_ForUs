@@ -10,26 +10,7 @@ import kotlinx.android.synthetic.main.activity_home_test.*
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_history)
-
-        //히스토리 이동
-       history_button.setOnClickListener{
-            startActivity(Intent(this,history::class.java))
-        }
-
-        //네비게이션 바 기능
-        home.setOnClickListener{
-            startActivity(Intent(this,Home::class.java))
-        }
-        camera.setOnClickListener{
-            startActivity(Intent(this,MainActivity::class.java))
-        }
-        earth.setOnClickListener{
-            startActivity(Intent(this,Home::class.java))
-        }
-        point.setOnClickListener{
-            startActivity(Intent(this,StoreMain::class.java))
-        }
+        setContentView(R.layout.activity_home)
 
     }
 
