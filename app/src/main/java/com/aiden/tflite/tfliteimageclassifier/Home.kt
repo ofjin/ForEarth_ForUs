@@ -2,8 +2,10 @@
 package com.aiden.tflite.tfliteimageclassifier
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageButton
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_home_test.*
 
@@ -27,6 +29,14 @@ class Home : AppCompatActivity() {
             startActivity(Intent(this,StoreMain::class.java))
         }
 
+
+        // 뉴스 URL 연결
+        val news_link1 = findViewById<ImageButton>(R.id.news_link1)
+
+        news_link1.setOnClickListener{
+            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.yna.co.kr/view/AKR20220930175700003"))
+            startActivity(intent)
+        }
     }
 
 }
