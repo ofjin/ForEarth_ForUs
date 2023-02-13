@@ -20,7 +20,7 @@ class Home : AppCompatActivity() {
             startActivity(Intent(this,Home::class.java))
         }
         camera.setOnClickListener{
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this,CameraActivity::class.java))
         }
         earth.setOnClickListener{
             startActivity(Intent(this,MainActivity::class.java))
