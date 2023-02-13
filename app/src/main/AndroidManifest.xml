@@ -16,9 +16,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TFLiteImageClassifier">
         <activity
-            android:name=".ListItem"
-            android:exported="false" />
-        <activity
             android:name=".ScanActivity"
             android:exported="false" />
         <activity
@@ -58,7 +55,7 @@
             android:name=".StoreMain"
             android:exported="false" />
         <activity
-            android:name=".SigninActivity"
+            android:name=".PurchaselistActivity"
             android:exported="true" >
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -81,7 +78,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".CameraActivity"
+            android:name=".SigninActivity"
             android:exported="true">
 
             <meta-data
@@ -103,7 +100,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".PurchaselistActivity"
+            android:name=".CameraActivity"
             android:exported="false" />
         <activity
             android:name=".GalleryActivity"
