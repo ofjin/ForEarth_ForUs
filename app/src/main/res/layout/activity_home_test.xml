@@ -166,11 +166,11 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_BGblue" />
 
     <Button
-        android:id="@+id/plogging_button"
+        android:id="@+id/btn_purchaselist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#00ff0000"
-        android:text="스토어"
+        android:text="구매내역"
         android:textColor="@color/black"
         android:textSize="15dp"
         android:textStyle="bold"

@@ -24,8 +24,8 @@ class Home : AppCompatActivity() {
             startActivity(Intent(this,history::class.java))
         }
         //구매내역 버튼
-        plogging_button.setOnClickListener{
-            startActivity(Intent(this,purchaseList::class.java))
+        btn_purchaselist.setOnClickListener{
+            startActivity(Intent(this,purchaselistActivity::class.java))
         }
 
         //네비게이션  바
