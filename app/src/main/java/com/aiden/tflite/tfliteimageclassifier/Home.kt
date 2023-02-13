@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_home_test.*
@@ -14,6 +15,11 @@ class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_test)
+
+        val home=findViewById<Button>(R.id.home)
+        val camera=findViewById<Button>(R.id.camera)
+        val earth=findViewById<Button>(R.id.earth)
+        val point=findViewById<Button>(R.id.point)
 
         //네비게이션  바
         home.setOnClickListener{
