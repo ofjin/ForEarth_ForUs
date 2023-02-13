@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "467250471410",
+    "firebase_url": "https://goon-e7a08-default-rtdb.firebaseio.com",
+    "project_id": "goon-e7a08",
+    "storage_bucket": "goon-e7a08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467250471410:android:506163c4cef47efb8e8b6b",
+        "android_client_info": {
+          "package_name": "com.aiden.tflite.tfliteimageclassifier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467250471410-6lrdnh9fhavmhriu5lpu94rvhp5r1jeo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-5yvykSnaVduCPprXi9uhbXZB0_5H7T0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467250471410-6lrdnh9fhavmhriu5lpu94rvhp5r1jeo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
