@@ -4,8 +4,11 @@
 
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="true" /> <!-- 인터넷 사용 권한 -->
+        android:required="true" />
+
+    <!--인터넷 사용 권한-->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
         android:allowBackup="true"
@@ -15,7 +18,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TFLiteImageClassifier">
         <activity
-            android:name=".Dialogcamera_plastic"
+            android:name=".ScanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QRScanner"
             android:exported="false" />
         <activity
             android:name=".StoreDetail_sticker3"
@@ -68,14 +74,13 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".CameraActivity"
+            android:name=".SigninActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -95,14 +100,15 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SigninActivity"
+            android:name=".CameraActivity"
             android:exported="false" />
         <activity
             android:name=".GalleryActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false">
+        </activity>
 
         <provider
             android:name="androidx.core.content.FileProvider"
