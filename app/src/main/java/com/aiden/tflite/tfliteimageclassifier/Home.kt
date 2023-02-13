@@ -8,12 +8,23 @@ import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_home_test.*
+import kotlinx.android.synthetic.main.activity_home_test.camera
+import kotlinx.android.synthetic.main.activity_home_test.earth
+import kotlinx.android.synthetic.main.activity_home_test.home
+import kotlinx.android.synthetic.main.activity_home_test.point
+import kotlinx.android.synthetic.main.activity_redeem_points.*
 
 
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_test)
+        history_button.setOnClickListener{
+            startActivity(Intent(this,history::class.java))
+        }
+        plogging_button.setOnClickListener{
+            startActivity(Intent(this,purchaseList::class.java))
+        }
 
         //네비게이션  바
         home.setOnClickListener{
