@@ -36,7 +36,7 @@ class Home : AppCompatActivity() {
             startActivity(Intent(this,CameraActivity::class.java))
         }
         earth.setOnClickListener{
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this,ScanActivity::class.java))
         }
         point.setOnClickListener{
             startActivity(Intent(this,StoreMain::class.java))
