@@ -445,7 +445,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <!--네비게이션바
+    <!--네비게이션바를 위한 -->
     <ImageView
         android:id="@+id/bottom"
         android:layout_width="430dp"
@@ -457,20 +457,19 @@
         app:srcCompat="@drawable/bottom" />
 
     <ImageButton
-        android:id="@+id/whome"
+        android:id="@+id/home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/whome"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toTopOf="@+id/bottom"
+        app:srcCompat="@drawable/home" />
 
     <ImageButton
-        android:id="@+id/wreal"
+        android:id="@+id/camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -479,23 +478,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/wreal"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        app:srcCompat="@drawable/camera" />
 
     <ImageButton
-        android:id="@+id/wkeep"
+        android:id="@+id/earth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/wkeep"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        app:srcCompat="@drawable/earth" />
 
     <ImageButton
-        android:id="@+id/bproduct"
+        android:id="@+id/point"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -504,11 +500,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.705"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bproduct"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        app:srcCompat="@drawable/point" />
 
     <ImageButton
-        android:id="@+id/wcompany"
+        android:id="@+id/more"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -517,8 +512,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.915"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/wcompany"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        app:srcCompat="@drawable/more" />
+    <!--네비게이션바를 위한 -->
 
--->
 </androidx.constraintlayout.widget.ConstraintLayout>

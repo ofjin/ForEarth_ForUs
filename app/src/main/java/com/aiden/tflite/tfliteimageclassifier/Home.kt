@@ -16,10 +16,10 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_test)
 
-        val home=findViewById<Button>(R.id.home)
-        val camera=findViewById<Button>(R.id.camera)
-        val earth=findViewById<Button>(R.id.earth)
-        val point=findViewById<Button>(R.id.point)
+        val home=findViewById<ImageButton>(R.id.home)
+        val camera=findViewById<ImageButton>(R.id.camera)
+        val earth=findViewById<ImageButton>(R.id.earth)
+        val point=findViewById<ImageButton>(R.id.point)
 
         //네비게이션  바
         home.setOnClickListener{
