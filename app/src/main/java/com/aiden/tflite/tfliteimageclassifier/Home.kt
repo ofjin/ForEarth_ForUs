@@ -19,9 +19,11 @@ class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_test)
+        //history 버튼
         history_button.setOnClickListener{
             startActivity(Intent(this,history::class.java))
         }
+        //구매내역 버튼
         plogging_button.setOnClickListener{
             startActivity(Intent(this,purchaseList::class.java))
         }
