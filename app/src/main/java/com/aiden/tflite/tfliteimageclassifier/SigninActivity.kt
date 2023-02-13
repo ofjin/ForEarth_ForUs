@@ -81,7 +81,7 @@ class SigninActivity : AppCompatActivity() {
         userInfoMap["userId"] = userUid
         currentDB.updateChildren(userInfoMap)
 
-        val likeActivityIntent = Intent(this,history::class.java)
+        val likeActivityIntent = Intent(this,Home::class.java)
         startActivity(likeActivityIntent)
     }
 
