@@ -26,6 +26,7 @@ import java.util.*
 class CameraActivity : AppCompatActivity() {
     private val binding by lazy { ActivityCameraBinding.inflate(layoutInflater, null, false) }
     private lateinit var classifier: Classifier
+    //사용 확인 팝업 버튼
     private var imageUri: Uri? = null
     private val cameraResult =
         registerForActivityResult(ActivityResultContracts.TakePicture()) { isSuccess: Boolean ->

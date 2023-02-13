@@ -57,7 +57,7 @@
             android:name=".StoreMain"
             android:exported="false" />
         <activity
-            android:name=".PurchaselistActivity"
+            android:name=".SigninActivity"
             android:exported="false" />
         <activity
             android:name=".Store_shoppingbasket"
@@ -74,7 +74,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SigninActivity"
+            android:name=".CameraActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -99,7 +99,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".CameraActivity"
+            android:name=".PurchaselistActivity"
             android:exported="false" />
         <activity
             android:name=".GalleryActivity"
