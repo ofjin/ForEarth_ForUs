@@ -8,6 +8,7 @@ import androidx.core.content.ContextCompat.startActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_signin.*
 
@@ -58,14 +59,32 @@ class SigninActivity : AppCompatActivity() {
         }
     }
 
-
     // 유저정보 넘겨주고 메인 액티비티 호출
     private fun moveMainPage(user: FirebaseUser?){
         if( user!= null){
             startActivity(Intent(this,Home::class.java))
-            finish()
+            handleSuccessLogin()
         }
     }
+    private fun handleSuccessLogin() {
+        // TODO 파이어베이스에 로그인 정보를 리얼타임 데이터베이스에 저장해야함
+        // uid값 저장
+
+        if( auth?.currentUser == null) {
+            Toast.makeText(this,"로그인 정보가 올바르지 않습니다",Toast.LENGTH_SHORT).show()
+            finish()
+        }
+
+        val userUid = auth?.currentUser?.uid.orEmpty() // null일시 빈값으로 변경
+        val currentDB = Firebase.database.reference.child("Users").child(userUid)
+        val userInfoMap = mutableMapOf<String,Any>()
+        userInfoMap["userId"] = userUid
+        currentDB.updateChildren(userInfoMap)
+
+        val likeActivityIntent = Intent(this,history::class.java)
+        startActivity(likeActivityIntent)
+    }
+
 
 }
 
