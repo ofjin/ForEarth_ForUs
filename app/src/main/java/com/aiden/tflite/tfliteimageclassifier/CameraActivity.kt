@@ -11,6 +11,7 @@ import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
@@ -59,6 +60,7 @@ class CameraActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         initClassifier()
+        setContentView(R.layout.activity_camera)
 
         val textResult=findViewById<Button>(R.id.textResult)
         textResult.setOnClickListener {
@@ -74,6 +76,25 @@ class CameraActivity : AppCompatActivity() {
 
                 }
             }
+        }
+
+        //네비게이션  바
+        val homeCameraView = findViewById<ImageButton>(R.id.home)
+        val cameraCameraView = findViewById<ImageButton>(R.id.camera)
+        val earthCameraView = findViewById<ImageButton>(R.id.earth)
+        val pointCameraView = findViewById<ImageButton>(R.id.point)
+
+        homeCameraView.setOnClickListener{
+            startActivity(Intent(this,Home::class.java))
+        }
+        cameraCameraView.setOnClickListener{
+            startActivity(Intent(this,MainActivity::class.java))
+        }
+        earthCameraView.setOnClickListener{
+            startActivity(Intent(this,MainActivity::class.java))
+        }
+        pointCameraView.setOnClickListener{
+            startActivity(Intent(this,StoreMain::class.java))
         }
     }
 
