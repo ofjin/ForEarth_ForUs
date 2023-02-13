@@ -24,10 +24,5 @@ class PurchaselistActivity : AppCompatActivity() {
         rv_list.layoutManager=LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
         rv_list.setHasFixedSize(true)
         rv_list.adapter=profileAdaptor(profileList)
-
-        val btn_confirm=findViewById<Button>(R.id.textResult)
-        btn_confirm.setOnClickListener {
-            startActivity(Intent(this@PurchaselistActivity,Dialogcamera_plastic::class.java))
-        }
     }
 }
