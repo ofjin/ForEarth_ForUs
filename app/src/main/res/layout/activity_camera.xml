@@ -10,7 +10,10 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottom">
+        app:layout_constraintBottom_toTopOf="@+id/bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -36,8 +39,8 @@
                 android:drawableStart="@drawable/danger_image_xml"
                 android:gravity="center"
                 android:text="개인 정보 유출 위험"
-                android:textSize="20dp"
                 android:textColor="@color/black"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@+id/imagePhoto" />
 
@@ -47,8 +50,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="택배 운송장을 제거해서 버려주세요."
-                app:layout_constraintTop_toBottomOf="@+id/privacyWarning"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/privacyWarning" />
 
             <Button
                 android:id="@+id/textResult"
