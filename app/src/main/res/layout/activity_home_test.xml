@@ -217,20 +217,26 @@
 
                     <ImageButton
                         android:id="@+id/campaign_link1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="0sp"
+                        android:layout_height="120sp"
                         android:layout_margin="10sp"
-                        android:background="@drawable/campaign1"
+                        android:src="@drawable/campaign1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <ImageButton
+                     <ImageButton
                         android:id="@+id/campaign_link2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
                         android:layout_marginStart="20sp"
-                        android:background="@drawable/campaign2"
+                        android:src="@drawable/campaign2"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"
                         app:layout_constraintStart_toEndOf="@+id/campaign_link1"
                         app:layout_constraintTop_toTopOf="@+id/campaign_link1" />
 
@@ -264,20 +270,24 @@
 
                     <ImageButton
                         android:id="@+id/news_link1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="220dp"
+                        android:layout_height="170sp"
                         android:layout_marginStart="10sp"
-                        android:background="@drawable/news1"
+                        android:src="@drawable/news1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
+                        android:id="@+id/news_tile_link1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:layout_marginStart="10sp"
-                        android:text="서울도심 쓰레기 함께 주워요…롯데백화점 '시티플로깅'"
+                        android:text="제주도, 지난해 나무 126만 그루 심어 탄소 \n5512톤 줄였다"
                         android:textColor="@color/black"
                         android:textSize="12dp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -285,12 +295,25 @@
 
                     <ImageButton
                         android:id="@+id/news_link2"
+                        android:layout_width="220dp"
+                        android:layout_height="170sp"
+                        android:layout_marginStart="20sp"
+                        android:src="@drawable/news2"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"
+                        app:layout_constraintStart_toEndOf="@+id/news_link1"
+                        app:layout_constraintTop_toTopOf="@+id/news_link1" />
+
+                    <TextView
+                        android:id="@+id/news_tile_link2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20sp"
-                        android:background="@drawable/news2"
-                        app:layout_constraintStart_toEndOf="@+id/news_link1"
-                        app:layout_constraintTop_toTopOf="@+id/news_link1" />
+                        android:text="환경부, 가뭄 극심한 안동·임하·영천댐 \n‘주의’ 단계 격상"
+                        app:layout_constraintStart_toEndOf="@+id/news_tile_link1"
+                        app:layout_constraintTop_toBottomOf="@+id/news_link2" />
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
