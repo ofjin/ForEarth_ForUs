@@ -10,7 +10,7 @@ class ListItem : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_item)
 
-        val btn_confirm=findViewById<Button>(R.id.textResult)
+        val btn_confirm=findViewById<Button>(R.id.btn_confirm)
         btn_confirm.setOnClickListener {
             startActivity(Intent(this@ListItem,Dialogcamera_plastic::class.java))
         }
