@@ -73,7 +73,8 @@
                         android:layout_width="170dp"
                         android:layout_height="170dp"
                         android:layout_marginLeft="23dp"
-                        android:background="@drawable/y_garbage_bag"/>
+                        android:background="@drawable/y_garbage_bag" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -103,11 +104,12 @@
                         android:layout_width="170dp"
                         android:layout_height="170dp"
                         android:layout_marginLeft="23dp"
-                        android:background="@drawable/y_garbage_bag"/>
+                        android:background="@drawable/y_garbage_bag" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="음식물 쓰레기 봉투(2L)"
+                        android:text="음식물 쓰레기 봉투(3L)"
                         android:textStyle="bold"
                         android:layout_marginLeft="23dp"
                         android:layout_marginTop="7dp"
@@ -147,7 +149,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="음식물 쓰레기 봉투(2L)"
+                        android:text="음식물 쓰레기 봉투(5L)"
                         android:textStyle="bold"
                         android:layout_marginLeft="23dp"
                         android:layout_marginTop="7dp"
@@ -177,7 +179,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="음식물 쓰레기 봉투(2L)"
+                        android:text="음식물 쓰레기 봉투(10L)"
                         android:textStyle="bold"
                         android:layout_marginLeft="23dp"
                         android:layout_marginTop="7dp"
@@ -212,11 +214,12 @@
                         android:layout_width="170dp"
                         android:layout_height="170dp"
                         android:layout_marginLeft="23dp"
-                        android:background="@drawable/w_garbage_bag"/>
+                        android:background="@drawable/w_garbage_bag" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="음식물 쓰레기 봉투(2L)"
+                        android:text="음식물 쓰레기 봉투(20L)"
                         android:textStyle="bold"
                         android:layout_marginLeft="23dp"
                         android:layout_marginTop="7dp"
@@ -246,7 +249,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="음식물 쓰레기 봉투(2L)"
+                        android:text="음식물 쓰레기 봉투(50L)"
                         android:textStyle="bold"
                         android:layout_marginLeft="23dp"
                         android:layout_marginTop="7dp"
@@ -351,7 +354,8 @@
                         android:layout_width="170dp"
                         android:layout_height="170dp"
                         android:layout_marginLeft="23dp"
-                        android:background="@drawable/sticker"/>
+                        android:background="@drawable/sticker" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

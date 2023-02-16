@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StoreDetail_sticker2">
+    tools:context=".StoreDetail_garbagebag6">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -67,17 +67,17 @@
                 android:background="@drawable/rectangle131">
 
                 <ImageView
-                    android:layout_width="180dp"
-                    android:layout_height="180dp"
-                    android:layout_marginLeft="115dp"
+                    android:layout_width="140dp"
+                    android:layout_height="210dp"
+                    android:layout_marginLeft="140dp"
                     android:layout_marginTop="30dp"
-                    android:background="@drawable/sticker" />
+                    android:background="@drawable/w_bag" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="대형폐기물스티커(2000원권)"
+                    android:text="일반용 쓰레기 봉투(50L)"
                     android:textSize="17dp"
                     android:textStyle="bold"
                     android:layout_marginLeft="50dp"
@@ -87,7 +87,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2000P"
+                    android:text="1250P"
                     android:textSize="25dp"
                     android:textStyle="bold"
                     android:layout_marginLeft="50dp"
@@ -143,7 +143,7 @@
                         android:id="@+id/price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="2000P"
+                        android:text="1250P"
                         android:textSize="25dp"
                         android:textStyle="bold"
                         android:textColor="@color/black"

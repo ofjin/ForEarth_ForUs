@@ -55,7 +55,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginLeft="160dp"
+                    android:layout_marginLeft="140dp"
                     android:layout_marginTop="25dp"
                     android:background="@drawable/cart_black" />
             </LinearLayout>
@@ -67,83 +67,87 @@
                 android:background="@drawable/rectangle131">
 
                 <ImageView
-                    android:layout_width="250dp"
-                    android:layout_height="230dp"
-                    android:layout_marginLeft="80dp"
-                    android:layout_marginTop="40dp"
-                    android:background="@drawable/w_garbage_bag" />
+                    android:layout_width="140dp"
+                    android:layout_height="210dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/w_bag" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="14dp"
-                    android:text="음식물 쓰레기 봉투(20L)"
+                    android:layout_marginTop="5dp"
+                    android:text="일반용 쓰레기 봉투(10L)"
                     android:textSize="17dp"
                     android:textStyle="bold"
                     android:layout_marginLeft="50dp"
-                    android:paddingTop="15dp"
+                    android:paddingTop="10dp"
                     android:textColor="@color/black"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="490p"
+                    android:text="250P"
                     android:textSize="25dp"
                     android:textStyle="bold"
                     android:layout_marginLeft="50dp"
-                    android:layout_marginTop="7dp"
+                    android:layout_marginTop="5dp"
                     android:textColor="@color/black"/>
+
                 <ImageView
-                    android:layout_width="400dp"
+                    android:layout_width="405dp"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_height="0.5dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginRight="15dp"
                     android:background="@drawable/line31" />
 
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/rectangle102"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginLeft="50dp"/>
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rectangle102" />
+
                     <ImageButton
                         android:id="@+id/minus"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/minus"
-                        android:layout_marginTop="70dp"
+                        android:layout_marginTop="57dp"
                         android:layout_marginLeft="70dp"/>
+
                     <TextView
                         android:id="@+id/quantity"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:layout_marginTop="65dp"
                         android:layout_marginLeft="102dp"
-                        android:textColor="@color/black"/>
+                        android:layout_marginTop="53dp"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                     <ImageButton
                         android:id="@+id/plus"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/plus"
-                        android:layout_marginTop="70dp"
+                        android:layout_marginTop="57dp"
                         android:layout_marginLeft="120dp"/>
 
                     <TextView
                         android:id="@+id/price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="490P"
+                        android:text="250P"
                         android:textSize="25dp"
                         android:textStyle="bold"
                         android:textColor="@color/black"
-                        android:layout_marginTop="63dp"
+                        android:layout_marginTop="50dp"
                         android:layout_marginLeft="280dp"/>
                 </FrameLayout>
 
@@ -155,8 +159,8 @@
                     <android.widget.Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="50dp"
-                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="25dp"
                         android:background="@drawable/rectangle333"
                         android:text="장바구니"
                         android:textSize="20dp"
@@ -166,7 +170,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/rectangle333"
-                        android:layout_marginTop="40dp"
+                        android:layout_marginTop="25dp"
                         android:layout_marginLeft="15dp"
                         android:text="구매하기"
                         android:textSize="20dp"

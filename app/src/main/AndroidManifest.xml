@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TFLiteImageClassifier">
         <activity
+            android:name=".StoreDetail_garbagebag6"
+            android:exported="false" />
+        <activity
             android:name=".ScanActivity"
             android:exported="false" />
         <activity
@@ -52,10 +55,10 @@
             android:name=".StoreDetail_garbagebag1"
             android:exported="false" />
         <activity
-            android:name=".StoreMain"
+            android:name=".SigninActivity"
             android:exported="false" />
         <activity
-            android:name=".SigninActivity"
+            android:name=".StoreMain"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

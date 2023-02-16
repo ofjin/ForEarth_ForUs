@@ -31,7 +31,7 @@ class StoreMain : AppCompatActivity() {
             startActivity(Intent(this,StoreDetail_garbagebag5::class.java))
         }
         w_garbage50.setOnClickListener{
-            startActivity(Intent(this,StoreDetail_garbagebag1::class.java))
+            startActivity(Intent(this,StoreDetail_garbagebag6::class.java))
         }
         bag.setOnClickListener{
             startActivity(Intent(this,StoreDetail_bag::class.java))
