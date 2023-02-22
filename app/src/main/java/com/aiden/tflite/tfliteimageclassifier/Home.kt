@@ -29,18 +29,28 @@ class Home : AppCompatActivity() {
         }
 
         //네비게이션  바
-        home.setOnClickListener{
+        val homeCameraView = findViewById<ImageButton>(R.id.home)
+        val cameraCameraView = findViewById<ImageButton>(R.id.camera)
+        val earthCameraView = findViewById<ImageButton>(R.id.earth)
+        val pointCameraView = findViewById<ImageButton>(R.id.point)
+        val moreView = findViewById<ImageButton>(R.id.more)
+
+        homeCameraView.setOnClickListener{
             startActivity(Intent(this,Home::class.java))
         }
-        camera.setOnClickListener{
-            startActivity(Intent(this,CameraActivity::class.java))
+        cameraCameraView.setOnClickListener{
+            startActivity(Intent(this,MainActivity::class.java))
         }
-        earth.setOnClickListener{
+        earthCameraView.setOnClickListener{
             startActivity(Intent(this,ScanActivity::class.java))
         }
-        point.setOnClickListener{
+        pointCameraView.setOnClickListener{
             startActivity(Intent(this,StoreMain::class.java))
         }
+        moreView.setOnClickListener{
+            startActivity(Intent(this,MoreActivity::class.java))
+        }
+
 
         val campaignLink1 = findViewById<ImageButton>(R.id.campaign_link1)
         val campaignLink2 = findViewById<ImageButton>(R.id.campaign_link2)

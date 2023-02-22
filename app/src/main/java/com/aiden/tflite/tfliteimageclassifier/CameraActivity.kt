@@ -78,12 +78,12 @@ class CameraActivity : AppCompatActivity() {
                 }
             }
         }
-
         //네비게이션  바
         val homeCameraView = findViewById<ImageButton>(R.id.home)
         val cameraCameraView = findViewById<ImageButton>(R.id.camera)
         val earthCameraView = findViewById<ImageButton>(R.id.earth)
         val pointCameraView = findViewById<ImageButton>(R.id.point)
+        val moreView = findViewById<ImageButton>(R.id.more)
 
         homeCameraView.setOnClickListener{
             startActivity(Intent(this,Home::class.java))
@@ -97,6 +97,10 @@ class CameraActivity : AppCompatActivity() {
         pointCameraView.setOnClickListener{
             startActivity(Intent(this,StoreMain::class.java))
         }
+        moreView.setOnClickListener{
+            startActivity(Intent(this,MoreActivity::class.java))
+        }
+
     }
 
     override fun onDestroy() {

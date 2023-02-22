@@ -50,7 +50,13 @@
             android:exported="false" />
         <activity
             android:name=".Home"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".StoreDetail_garbagebag1"
             android:exported="false" />
@@ -59,12 +65,7 @@
             android:exported="false" />
         <activity
             android:name=".StoreMain"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false">
         </activity>
         <activity
             android:name=".Store_shoppingbasket"
@@ -109,6 +110,9 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MoreActivity"
             android:exported="false" />
 
         <provider
