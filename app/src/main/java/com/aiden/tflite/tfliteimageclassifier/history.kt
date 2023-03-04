@@ -8,6 +8,9 @@ import kotlinx.android.synthetic.main.activity_home_test.*
 import kotlinx.android.synthetic.main.activity_signup.*
 
 class history : AppCompatActivity() {
+
+    private lateinit var userId:String  // SigninActivity에서 유저id를 전달받아 저장할 변수
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_history)

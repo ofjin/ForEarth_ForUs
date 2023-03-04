@@ -49,7 +49,7 @@
             android:name=".StoreDetail_garbagebag2"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name=".SigninActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -61,10 +61,10 @@
             android:name=".StoreDetail_garbagebag1"
             android:exported="false" />
         <activity
-            android:name=".SigninActivity"
+            android:name=".StoreMain"
             android:exported="false" />
         <activity
-            android:name=".StoreMain"
+            android:name=".purchaselistActivity"
             android:exported="false">
         </activity>
         <activity
@@ -82,7 +82,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".purchaselistActivity"
+            android:name=".Home"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
